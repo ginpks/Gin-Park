@@ -11,7 +11,7 @@
     margin-left: 30px;
     -webkit-font-smoothing: antialiased;
     background: linear-gradient(to right,
-    #efb9ec 30%, #DCEAB2 90%, #50D8D7 10%);
+    #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
     background-position: 0;
     background-clip: text;
     -webkit-background-clip: text;
