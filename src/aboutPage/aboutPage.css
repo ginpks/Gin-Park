@@ -1,0 +1,70 @@
+.aboutMeContainer {
+    top: 15vh;
+    position:fixed;
+    left: 50%;            
+    transform: translateX(-50%);
+}
+
+#arrow {
+    display: flex;
+    font-size: 5em;
+  }
+
+#back:hover{
+  cursor:pointer;
+}
+
+#back {
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(to right,
+    #efb9ec 10%, #DCEAB2 20%, #50D8D7 90%);
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: move 10s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+.backArrow {
+    width: 30vw;
+    font-size: 0.8rem;
+  }
+.backArrow a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+
+  }
+  
+.aboutMeText {
+  box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
+  padding: 4vh;
+  padding-bottom: 3vh;
+  color: white;
+  width: 40vw;
+  max-width: 50vw;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  min-height: 30vh;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+#ig {
+    color: #efb9ec;
+}
+
+#ig:hover {
+    color: white;
+}
+
+.aboutMeText i {
+    font-size: 20px;
+}
+
+.aboutMeText a {
+    text-decoration: none;
+}

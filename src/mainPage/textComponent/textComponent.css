@@ -7,6 +7,15 @@
     border-radius: 7%;
 }
 
+.text a {
+  /* Inherit the color from the parent (likely your h2 styles) */
+  color: inherit;
+  /* Remove the default underline */
+  text-decoration: none;
+  /* Remove any browser-specific tap highlight color on mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
 #info1 {
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
