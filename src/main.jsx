@@ -1,13 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from './App.jsx'
 import ProjectPage from './projectsPage/projectsPage';
+import MainPage from './mainPage/mainPage.jsx';
 import AboutPage
  from './aboutPage/aboutPage.jsx';
 const router = createBrowserRouter([
     {
         path: "/Gin-Park",
-        element: <App />
+        element: <MainPage />
     },
     {
         path: "/Gin-Park/about",

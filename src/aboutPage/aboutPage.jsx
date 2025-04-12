@@ -14,7 +14,6 @@ function AboutPage() {
             <div className="aboutMeContainer">
                 <div className="backArrow">
                     <Link to="/Gin-Park">
-                        {/* Use className for React */}
                         <span id="arrow"><a id="back" href="#">&#8592;</a></span>
                     </Link>
                 </div>

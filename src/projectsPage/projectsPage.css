@@ -1,3 +1,83 @@
-.projects-page {
-   
+.projectText {
+    box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
+    padding: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 3vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    font-weight: light;
+    overflow-y: scroll; /* This enables vertical scrolling */
+    max-height: 70vh;
+    border-radius: 10px;
+    max-width:fit-content;
 }
+
+p {
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+}
+
+#projects {
+    font-weight: bold;
+    color: #efb9ec;
+}
+
+.backArrow2 a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.projects {
+    top: 5vh;
+    position:fixed;
+    left: 50%;            
+    transform: translateX(-50%);
+}
+
+.backArrow2 {
+    margin-left:20vh;
+    margin-right:20vh;
+    font-size: 0.8rem;
+}
+
+
+ul {
+    list-style:square;
+    font-size: 18px;
+    line-height: 3vh;
+    color:white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #141c35;
+  }
+  
+  
+  hr {
+    border-top: 1px solid #ffffff;
+    width: 60vw
+  }
+  
+  
+  .URide {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .trivia {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .sudoku {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .weather {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }

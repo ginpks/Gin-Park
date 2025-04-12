@@ -19,62 +19,63 @@
 #info1 {
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(to right, #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
-  background-size: 100% auto;
+  background: linear-gradient(to right,
+  #efb9ec 10%, #DCEAB2 20%, #50D8D7 60%);
+  background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  animation: move 15s infinite linear;
+  animation-fill-mode: forwards;
   padding-top: 1rem;
-  animation: move 15s infinite linear; 
-  animation-delay: 0s; 
 }
 
 #info2 {
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(to right, #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
-  background-size: 100% auto;
+  background: linear-gradient(to right,
+  #50D8D7 10%, #efb9ec 20%, #DCEAB2 60%);
+  background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  animation: move 15s infinite linear;
+  animation-fill-mode: forwards;
   padding-top: 1rem;
-  animation: move 15s infinite linear; 
-  animation-delay: -5s; 
 }
 
 #info3 {
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(to right, #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
-  background-size: 100% auto;
+  background: linear-gradient(to right,
+  #50D8D7 10%, #DCEAB2 20%, #efb9ec 60%);
+  background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  animation: move 15s infinite linear;
+  animation-fill-mode: forwards;
   padding-top: 1rem;
-  animation: move 15s infinite linear; /* Base animation */
-  animation-delay: -10s; /* Start 10 seconds "into" the animation */
 }
-
 
 h2 {
   cursor: pointer;
 }
 
 @keyframes move {
-    0%{
-        background-position: 0;
-    }
-    50%{
-        background-position: 180px;
-    }
-    100%{
-        background-position: 400px;
-    }
+  0%{
+      background-position: 0;
+  }
+  50%{
+      background-position: 180px;
+  }
+  100%{
+      background-position: 400px;
+  }
 }
-
 @keyframes cursor-blink {
     0% {
       opacity: 0;
