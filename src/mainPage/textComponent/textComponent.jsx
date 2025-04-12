@@ -9,13 +9,13 @@ function TextComponent() {
     return (
         <div className="text">
             <h2 id="syntax">function <span id="name">Gin_Park( ) </span>{'{'}</h2>
-            <Link to="/Gin-Park/about">
+            <Link to="/about">
                 <h2 id="info1">about_Me( );</h2>
             </Link>
-            <Link to="/Gin-Park/projects">
+            <Link to="/projects">
                 <h2 id="info2">projects( );</h2>
             </Link>
-            <Link to="/Gin-Park/blog">
+            <Link to="/blog">
                 <h2 id="info3">my_blog( );</h2>
             </Link>
             <h2 id="syntax"><span id="blink">{'}'}</span></h2>

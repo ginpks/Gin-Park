@@ -6,13 +6,9 @@ import { Link } from "react-router-dom";
 function ProjectPage() {
     return (  
       <div className="projects-page">
-        <div className="bg-animation">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-        </div>
         <div className="projects">
           <div className="backArrow2">
-              <Link to="/Gin-Park">
+              <Link to="/">
                 <span id="arrow"><a id="back">&#8592;</a></span>
               </Link>
           </div>

@@ -7,13 +7,9 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import from
 function AboutPage() {
     return (
         <div className="about_me">
-            <div className="bg-animation">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-            </div>
             <div className="aboutMeContainer">
                 <div className="backArrow">
-                    <Link to="/Gin-Park">
+                    <Link to="/">
                         <span id="arrow"><a id="back" href="#">&#8592;</a></span>
                     </Link>
                 </div>

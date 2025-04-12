@@ -1,24 +1,35 @@
-import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ProjectPage from './projectsPage/projectsPage';
+import Layout from './Layout.jsx'; 
 import MainPage from './mainPage/mainPage.jsx';
-import AboutPage
- from './aboutPage/aboutPage.jsx';
+import AboutPage from './aboutPage/aboutPage.jsx';
+import ProjectsPage from './projectsPage/projectsPage.jsx';
+import './mainPage/mainPage.css';
+
 const router = createBrowserRouter([
-    {
-        path: "/Gin-Park",
-        element: <MainPage />
-    },
-    {
-        path: "/Gin-Park/about",
-        element: <AboutPage />
-    },
-    {
-        path: "/Gin-Park/projects",
-        element: <ProjectPage />
-    }
-]);
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <MainPage />,
+      },
+      {
+        path: "about", 
+        element: <AboutPage />,
+      },
+      {
+        path: "projects", 
+        element: <ProjectsPage />,
+      },
+    ],
+  },
+
+], {
+  basename: "/Gin-Park", 
+});
 
 createRoot(document.getElementById('root')).render(
-    <RouterProvider router={router} />
+  <RouterProvider router={router} />
 );
