@@ -1,6 +1,9 @@
+import React from 'react';
+import MainPage from './mainPage/mainPage'
+
 function App() {
   return (
-      <h1>hi</h1>
+      <MainPage />
   )
 }
 
