@@ -8,9 +8,7 @@ function ProjectPage() {
       <div className="projects-page">
         <div className="projects">
           <div className="backArrow2">
-              <Link to="/">
-                <span id="arrow"><a id="back">&#8592;</a></span>
-              </Link>
+            <span id="arrow"><a id="back"><Link to="/">&#8592;</Link></a></span>
           </div>
           <div className="projectText">
               <div className="URide">

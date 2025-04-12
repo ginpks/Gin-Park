@@ -6,9 +6,7 @@ function BlogPage() {
     return (
         <div className="blog-page">
             <div className="backArrow2">
-              <Link to="/">
-                <span id="arrow"><a id="back">&#8592;</a></span>
-              </Link>
+              <span id="arrow"><a id="back"><Link to="/">&#8592;</Link></a></span>
             </div>
             <h1>soon...</h1>
         </div>

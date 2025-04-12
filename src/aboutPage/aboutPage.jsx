@@ -9,9 +9,7 @@ function AboutPage() {
         <div className="about_me">
             <div className="aboutMeContainer">
                 <div className="backArrow">
-                    <Link to="/">
-                        <span id="arrow"><a id="back" href="#">&#8592;</a></span>
-                    </Link>
+                    <span id="arrow"><a id="back" href="#"><Link to="/">&#8592;</Link></a></span>
                 </div>
                 <div className="aboutMeText">
                     <h1>

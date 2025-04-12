@@ -43,7 +43,6 @@ p {
     font-size: 0.8rem;
 }
 
-
 ul {
     list-style:square;
     font-size: 18px;
@@ -86,4 +85,8 @@ ul {
     color: inherit;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  Link {
+    cursor: pointer;
   }
