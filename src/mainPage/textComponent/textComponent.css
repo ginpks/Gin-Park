@@ -7,19 +7,46 @@
     border-radius: 7%;
 }
 
-#info1, #info2, #info3 {
-    margin-left: 30px;
-    -webkit-font-smoothing: antialiased;
-    background: linear-gradient(to right,
-    #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
-    background-position: 0;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    animation: move 15s infinite linear;
-    animation-fill-mode: forwards;
-    padding-top: 1rem;
+#info1 {
+  margin-left: 30px;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(to right, #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
+  background-size: 100% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-top: 1rem;
+  animation: move 15s infinite linear; 
+  animation-delay: 0s; 
+}
+
+#info2 {
+  margin-left: 30px;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(to right, #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
+  background-size: 100% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-top: 1rem;
+  animation: move 15s infinite linear; 
+  animation-delay: -5s; 
+}
+
+#info3 {
+  margin-left: 30px;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(to right, #efb9ec 10%, #DCEAB2 50%, #50D8D7 90%);
+  background-size: 100% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-top: 1rem;
+  animation: move 15s infinite linear; /* Base animation */
+  animation-delay: -10s; /* Start 10 seconds "into" the animation */
 }
 
 
