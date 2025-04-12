@@ -1,0 +1,18 @@
+.backArrow3 a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .backArrow3 {
+    margin-left:20vh;
+    margin-right:20vh;
+    font-size: 0.8rem;
+}
+
+.blog-page h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

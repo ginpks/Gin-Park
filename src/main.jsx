@@ -4,6 +4,7 @@ import Layout from './Layout.jsx';
 import MainPage from './mainPage/mainPage.jsx';
 import AboutPage from './aboutPage/aboutPage.jsx';
 import ProjectsPage from './projectsPage/projectsPage.jsx';
+import BlogPage from './blogPage/blogPage.jsx';
 import './mainPage/mainPage.css';
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         path: "projects", 
         element: <ProjectsPage />,
       },
+      {
+        path: "blog", 
+        element: <BlogPage />,
+      }
     ],
   },
 

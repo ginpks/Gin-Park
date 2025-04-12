@@ -23,13 +23,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    animation: move 10s infinite linear;
+    animation: move 20s infinite linear;
     animation-fill-mode: forwards;
 }
 
 .backArrow {
-    width: 30vw;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 .backArrow a {
     color: inherit;
@@ -38,18 +39,18 @@
   }
   
 .aboutMeText {
-  box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
-  padding: 4vh;
   padding-bottom: 3vh;
-  color: white;
+  color:white;
   width: 40vw;
   max-width: 50vw;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 0.8rem;
   line-height: 2.5rem;
   min-height: 30vh;
   max-height: 40vh;
   overflow: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 #ig {

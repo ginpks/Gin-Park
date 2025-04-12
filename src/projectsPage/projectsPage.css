@@ -1,5 +1,5 @@
 .projectText {
-    box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
     padding: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -8,7 +8,7 @@
     margin-right: 20vh;
     font-weight: light;
     overflow-y: scroll; /* This enables vertical scrolling */
-    max-height: 70vh;
+    max-height: 60vh;
     border-radius: 10px;
     max-width:fit-content;
 }
@@ -31,7 +31,7 @@ p {
   }
 
 .projects {
-    top: 5vh;
+    top: 10vh;
     position:fixed;
     left: 50%;            
     transform: translateX(-50%);
@@ -80,4 +80,10 @@ ul {
   .weather {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  
+  .projectText a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
   }

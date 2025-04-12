@@ -8,11 +8,8 @@
 }
 
 .text a {
-  /* Inherit the color from the parent (likely your h2 styles) */
   color: inherit;
-  /* Remove the default underline */
   text-decoration: none;
-  /* Remove any browser-specific tap highlight color on mobile */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -20,28 +17,29 @@
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to right,
-  #efb9ec 10%, #DCEAB2 20%, #50D8D7 60%);
+  #efb9ec 40%, #DCEAB2 60%, #50D8D7 70%);
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  animation: move 15s infinite linear;
+  animation: move 20s infinite linear;
   animation-fill-mode: forwards;
   padding-top: 1rem;
 }
+
 
 #info2 {
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to right,
-  #50D8D7 10%, #efb9ec 20%, #DCEAB2 60%);
+  #50D8D7 10%, #efb9ec 90%, #DCEAB2 80%);
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  animation: move 15s infinite linear;
+  animation: move 20s infinite linear;
   animation-fill-mode: forwards;
   padding-top: 1rem;
 }
@@ -50,18 +48,18 @@
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to right,
-  #50D8D7 10%, #DCEAB2 20%, #efb9ec 60%);
+  #50D8D7 20%, #DCEAB2 30%, #efb9ec 50%);
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  animation: move 15s infinite linear;
+  animation: move 20s infinite linear;
   animation-fill-mode: forwards;
   padding-top: 1rem;
 }
 
-h2 {
+Link {
   cursor: pointer;
 }
 
