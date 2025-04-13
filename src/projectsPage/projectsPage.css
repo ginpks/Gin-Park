@@ -96,7 +96,7 @@ ul {
   font-size: 4rem;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
   .projects {
     margin-left: 5vw;
     margin-right: 5vw;

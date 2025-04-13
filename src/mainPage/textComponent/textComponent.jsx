@@ -2,9 +2,6 @@ import React from 'react';
 import './textComponent.css';
 import { Link } from "react-router-dom";
 
-
-
-
 function TextComponent() { 
     return (
         <div className="text">

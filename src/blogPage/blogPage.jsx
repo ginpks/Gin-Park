@@ -1,5 +1,5 @@
 import './blogPage.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import restApiImage from '../assets/7076397.jpg';
 import foodImage from '../assets/food.jpeg';
@@ -30,6 +30,15 @@ const pageTransition = {
 };
 
 function BlogPage() {
+    
+    useEffect(() => {
+        document.documentElement.classList.add('allow-scroll');
+        return () => {
+            document.documentElement.classList.remove('allow-scroll');
+        };
+    }, []); 
+
+
     return (
         <motion.div 
             initial="initial"

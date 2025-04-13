@@ -1,9 +1,17 @@
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
+/* Add this new rule */
+html.allow-scroll {
+  overflow-y: auto; /* Enable scrolling when this class is present */
+}
 
 main {
   position: relative; /* Establish positioning context */
   width: 100%;       /* Ensure it takes full width */
-  overflow: hidden; /* Hide horizontal overflow */
+  overflow-x: hidden; /* Hide horizontal overflow */
   /* overflow-y: auto; */ /* Optional: Allow vertical scroll if content is tall */
   min-height: 100vh; /* Optional: Ensure it fills viewport height */
 }
