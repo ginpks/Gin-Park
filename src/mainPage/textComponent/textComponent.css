@@ -17,7 +17,7 @@
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to right,
-  #efb9ec 40%, #DCEAB2 60%, #50D8D7 70%);
+  #efb9ec 0%, #DCEAB2 50%, #50D8D7 100%);
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
@@ -33,7 +33,7 @@
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to right,
-  #50D8D7 10%, #efb9ec 90%, #DCEAB2 80%);
+  #50D8D7 0%, #efb9ec 50%, #DCEAB2 100%);
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
@@ -48,7 +48,7 @@
   margin-left: 30px;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(to right,
-  #50D8D7 20%, #DCEAB2 30%, #efb9ec 50%);
+  #50D8D7 0%, #DCEAB2 50%, #efb9ec 100%);
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
