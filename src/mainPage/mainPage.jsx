@@ -1,4 +1,5 @@
-import React from 'react';
+import React  from 'react';
+import { useEffect } from 'react';
 import './mainPage.css';
 import TextComponent from './textComponent/textComponent';
 import LinksComponent from './linksComponent/linksComponent';
@@ -30,6 +31,12 @@ const pageTransition = {
 
 
 function MainPage() {
+    useEffect(() => {
+        document.documentElement.classList.add('allow-scroll');
+        return () => {
+            document.documentElement.classList.remove('allow-scroll');
+        };
+    }, []); 
     return (
         <motion.div 
             className='main-page'
