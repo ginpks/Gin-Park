@@ -90,3 +90,14 @@ ul {
   Link {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 450px) {
+    .projectText {
+      margin-right: 15vw;
+      margin-left: 15vw;
+    }
+
+    .backArrow2 {
+      margin-left: 15vw;
+    }
+  }

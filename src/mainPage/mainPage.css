@@ -26,3 +26,11 @@ html {
   background: white;
   border-radius: 20px;
 }
+
+
+
+@media only screen and (max-width: 400px) {
+  .main-page {
+    margin: 15vh auto;
+  }
+}
