@@ -3,7 +3,7 @@ import './mainPage.css';
 import TextComponent from './textComponent/textComponent';
 import LinksComponent from './linksComponent/linksComponent';
 import { motion } from 'framer-motion';
-
+import catchingHeart from '../assets/catching-heart.gif';
 // Define animation variants for MainPage
 const pageVariants = {
     initial:{
@@ -40,6 +40,7 @@ function MainPage() {
             transition={pageTransition}
         >
             <div className="information">
+                <img src={catchingHeart}></img>
                 <TextComponent />
                 <LinksComponent />
             </div>

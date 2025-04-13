@@ -7,7 +7,7 @@ html {
 }
 
 .main-page {
-    margin: 25vh auto;
+    margin: 13vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,10 +27,21 @@ html {
   border-radius: 20px;
 }
 
+.information img {
+  position: relative;
+  width: 100px; /* Example: Reduced from 50px to 35px */
+  height: auto; /* Keep 'auto' to maintain aspect ratio */
+  top: 0.80vh; /* You might need to adjust 'top' after resizing */
+  z-index: 10;
+  left: 150px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
 
 
 @media only screen and (max-width: 550px) {
   .main-page {
-    margin: 15vh auto;
+    margin: 10vh auto;
   }
 }
