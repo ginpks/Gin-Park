@@ -29,9 +29,9 @@ html {
 
 .information img {
   position: relative;
-  width: 90px; /* Example: Reduced from 50px to 35px */
+  width: 80px; /* Example: Reduced from 50px to 35px */
   height: auto; /* Keep 'auto' to maintain aspect ratio */
-  top: 0.80vh; /* You might need to adjust 'top' after resizing */
+  top: 0.85vh; /* You might need to adjust 'top' after resizing */
   z-index: 10;
   left: 150px;
   image-rendering: pixelated;
@@ -42,6 +42,12 @@ html {
 
 @media only screen and (max-width: 550px) {
   .main-page {
-    margin: 10vh auto;
+    margin-top: 0vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .information img {
+    width: 70px;
   }
 }
