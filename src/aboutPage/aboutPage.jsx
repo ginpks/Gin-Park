@@ -45,8 +45,8 @@ function AboutPage() {
                 <div className="aboutMeText">
                     <h1>
                         Greetings! My name is Gin, and I'm a student at UMass Amherst currently pursuing a B.S. in Computer Science. <br /><br />
-                        I love coding and bringing ideas to life through the application of my skills. In particular, I have a strong affinity for front-end, back-end, or fullstack development. I'm dedicated to my craft, and I'm always looking for ways to grow and learn from others.<br /><br />
-                        Whenever I'm free, I enjoy hiking, gaming, shows/movies, MMA, Brazilian JiuJitsu, and especially food/cooking! Check out my food on{' '}
+                        Developing and refining ideas through code is something that gets me out of bed in the morning. Whether it’s front-end, back-end, or full-stack work, I’m deeply dedicated to my craft while committed to learning and growing alongside others.<br /><br />
+                        If you're curious about my leisurely activites: I enjoy hiking, gaming, shows/movies, MMA, Brazilian JiuJitsu, and especially food/cooking!<br></br> Check out my food on{' '}
                         <a href="https://www.instagram.com/ginsgluttony/" target="_blank" rel="noopener noreferrer" id="ig">
                             instagram!{' '}
                             <FontAwesomeIcon icon={faInstagram} />
@@ -59,3 +59,4 @@ function AboutPage() {
 }
 export default AboutPage;
 
+// Developing and refining ideas through code is my true passion. Whether it’s front-end, back-end, or full-stack work, I’m deeply dedicated to my craft and committed to learning and growing alongside others in the field.
