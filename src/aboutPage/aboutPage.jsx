@@ -3,10 +3,41 @@ import './aboutPage.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import from brands
+import { motion } from 'framer-motion'; // <-- Import motion
+
+// Define animation variants for AboutPage
+const pageVariants = {
+    initial: {
+        x: "100vw", // Start off-screen to the right
+        opacity: 0
+    },
+    animate: {
+        x: 0, // Animate to center
+        opacity: 1
+    },
+    exit: {
+        x: "100vw", // Exit off-screen to the right
+        opacity: 0
+    }
+};
+
+// Define transition properties (can be the same or different)
+const pageTransition = {
+    type: "tween",
+    ease: "anticipate", // Or your preferred ease
+    duration: 0.3   // DECREASED duration (e.g., from 0.5)
+};
 
 function AboutPage() {
     return (
-        <div className="about_me">
+        <motion.div 
+            className="about_me"
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={pageVariants}
+            transition={pageTransition}
+        >
             <div className="aboutMeContainer">
                 <div className="backArrow">
                     <span id="arrow"><a id="back" href="#"><Link to="/">&#8592;</Link></a></span>
@@ -23,7 +54,7 @@ function AboutPage() {
                     </h1>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default AboutPage;

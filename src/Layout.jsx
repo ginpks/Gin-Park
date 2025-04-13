@@ -1,8 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom'; 
+import { Outlet, useLocation, useOutlet } from 'react-router-dom'; 
 import './Layout.css';
+import { AnimatePresence } from 'framer-motion'
 
 function Layout() {
+  const location = useLocation();
+  const currentOutlet = useOutlet();
+  
   return (
     <> 
       <div className="bg-animation">
@@ -13,7 +17,9 @@ function Layout() {
       </div>
 
       <main> 
-        <Outlet />
+        <AnimatePresence mode="wait">
+          {currentOutlet && React.cloneElement(currentOutlet, { key: location.pathname })}
+        </AnimatePresence>
       </main>
     </>
   );

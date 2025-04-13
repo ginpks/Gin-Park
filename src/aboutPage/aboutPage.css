@@ -1,8 +1,12 @@
+.about_me {
+  overflow-y: hidden;
+}
+
 .aboutMeContainer {
-  top: 15vh;
-  position:fixed;
-  left: 50%;            
-  transform: translateX(-50%);
+  margin: 15vh auto 0 auto;
+  width: 40vw;
+  max-width: 45vw;
+  position: relative;
 }
 
 #arrow {
@@ -41,13 +45,13 @@
 .aboutMeText {
   padding-bottom: 3vh;
   color:white;
-  width: 40vw;
-  max-width: 50vw;
+  width: fit-content;
+  max-width: 80vw;
   border-radius: 10px;
   font-size: 0.8rem;
   line-height: 2.5rem;
   min-height: 30vh;
-  max-height: 40vh;
+  max-height: 50vh;
   overflow: auto;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -70,23 +74,28 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .aboutMeText {
-    padding-bottom: 3vh;
-    color:white;
-    width: 60vw;
-    max-width: 70vw;
-    border-radius: 10px;
-    font-size: 0.7rem;
-    line-height: 2.5rem;
-    min-height: 40vh;
-    max-height: 70vh;
-    overflow: auto;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
+
 
   .aboutMeContainer {
-    top: 7vh;
+    display: flex;
+    flex-direction: column;
+    /* Override the default width/max-width for small screens */
+    width: 90vw;     /* Make the container take up most of the viewport width */
+    max-width: none;  /* Remove the previous max-width restriction */
+    margin-top: 10vh; /* Optional: Adjust top margin for smaller screens */
+    /* Keep margin-left/right auto for centering */
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .aboutMeText {
+        width: 100%; /* This is correct - it takes full width of the now wider parent */
+    /* Optional: Adjust padding for smaller screens if vw units become too small */
+    padding-left: 15px;
+    padding-right: 15px;
+    /* Optional: Adjust font-size or line-height if needed */
+    font-size: 0.9rem;
+    line-height: 2rem;
   }
 
 }

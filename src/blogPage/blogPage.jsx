@@ -5,10 +5,40 @@ import restApiImage from '../assets/7076397.jpg';
 import foodImage from '../assets/food.jpeg';
 import hikesImage from '../assets/hike.jpeg';
 import cmvImage from '../assets/cmv.png';
+import { motion } from 'framer-motion';
+// Define animation variants for AboutPage
+const pageVariants = {
+    initial: {
+        x: "100vw", // Start off-screen to the right
+        opacity: 0
+    },
+    animate: {
+        x: 0, // Animate to center
+        opacity: 1
+    },
+    exit: {
+        x: "100vw", // Exit off-screen to the right
+        opacity: 0
+    }
+};
+
+// Define transition properties (can be the same or different)
+const pageTransition = {
+    type: "tween",
+    ease: "anticipate", // Or your preferred ease
+    duration: 0.3    // DECREASED duration (e.g., from 0.5)
+};
 
 function BlogPage() {
     return (
-        <div className="blog-page">
+        <motion.div 
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={pageVariants}
+            transition={pageTransition}
+            className="blog-page"
+        >
             <div className="backArrow3">
               <span id="arrow"><a id="back"><Link to="/">&#8592;</Link></a></span>
             </div>
@@ -30,7 +60,7 @@ function BlogPage() {
                     <h1>Nature & Elevation</h1>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
