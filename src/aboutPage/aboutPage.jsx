@@ -5,18 +5,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import from brands
 import { motion } from 'framer-motion'; // <-- Import motion
 
-// Define animation variants for AboutPage
 const pageVariants = {
     initial: {
-        x: "100vw", // Start off-screen to the right
+        x: "50vw",
+        scale: 0.7,
         opacity: 0
     },
     animate: {
-        x: 0, // Animate to center
+        x: 0,
+        scale: 1,
         opacity: 1
     },
     exit: {
-        x: "100vw", // Exit off-screen to the right
+        x: "50vw",
+        scale: 0.7,
         opacity: 0
     }
 };
@@ -25,7 +27,7 @@ const pageVariants = {
 const pageTransition = {
     type: "tween",
     ease: "anticipate", // Or your preferred ease
-    duration: 0.3   // DECREASED duration (e.g., from 0.5)
+    duration: 0.5   // DECREASED duration (e.g., from 0.5)
 };
 
 function AboutPage() {
