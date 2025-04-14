@@ -6,17 +6,22 @@
 }
 
 #roundedblog {
-  border: 1px solid white;
-  max-width: 1300px;
+  display: flex;
+  flex-grow:inherit;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efb9ec;
+  max-width: 1200px;
   min-width: 300px;
 }
 
 .white-cat {
+  display: block;
   width: max-content;
   width: 70px;    /* --- Adjust this width to make it smaller/larger --- */
   height: auto;   /* Maintain aspect ratio */
-  margin-top: -5vh; /* Space above the cat (adjust as needed) */
-  margin-bottom: -24px; /* Space between cat and the hr (adjust as needed) */
+  margin-top: -38px; /* Space above the cat (adjust as needed) */
+  margin-bottom: -50px; /* Space between cat and the hr (adjust as needed) */
   margin-left: 40vw; 
 }
 
@@ -41,8 +46,8 @@
   max-width: 1200px;
   margin-left: auto; 
   margin-right: auto; 
-  margin-bottom: 1rem; 
-  margin-top: 2rem;
+  margin-bottom: 0.5rem; 
+  margin-top: 1rem;
   text-align: left;
 }
 
@@ -72,8 +77,8 @@
 }
 
 .blog-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(239, 185, 236, 0.1);
+  transform: translateY(-19px);
+  box-shadow: 0 8px 18px rgba(239, 185, 236, 0.1);
 }
 
 

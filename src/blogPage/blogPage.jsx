@@ -37,8 +37,8 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.1, // Optional delay before staggering starts
-            staggerChildren: 0.1,  // Time between each card animation (adjust as needed)
+            delayChildren: 0.2, // Optional delay before staggering starts
+            staggerChildren: 0.2,  // Time between each card animation (adjust as needed)
         }
     }
 };

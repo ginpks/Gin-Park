@@ -42,12 +42,16 @@ html {
 
 @media only screen and (max-width: 550px) {
   .main-page {
-    margin-top: 0vh;
+    margin-top: 10vh;
     margin-left: 0;
     margin-right: 0;
   }
 
   .information img {
     width: 70px;
+  }
+
+  html {
+    overflow-y: auto;
   }
 }
