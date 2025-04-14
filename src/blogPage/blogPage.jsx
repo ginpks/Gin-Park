@@ -25,6 +25,13 @@ const pageVariants = {
     }
 };
 
+const pageTransition = {
+    type: "tween",
+    ease: "anticipate", 
+    duration: 0.6    
+}
+
+
 
 // --- Stagger Container Animation ---
 const containerVariants = {
@@ -40,7 +47,7 @@ const containerVariants = {
 
 // --- Individual Card Animation ---
 const cardVariants = {
-    hidden: { y: 0, opacity: 0 }, // Start slightly down and invisible
+    hidden: { y: 100, opacity: 0 }, // Start slightly down and invisible
     visible: {
         y: 0,
         opacity: 1,
@@ -48,7 +55,7 @@ const cardVariants = {
             // Optional: add a transition to the card itself for smoothness
             type: "tween",
             ease: "anticipate", // Or your preferred ease
-            duration: 0.5   // DECREASED duration (e.g., from 0.5)
+            duration: 0.8   // DECREASED duration (e.g., from 0.5)
         }
     }
 };
@@ -69,6 +76,7 @@ function BlogPage() {
             animate="animate"
             exit="exit"
             variants={pageVariants}
+            transition={pageTransition}
             className="blog-page"
         >
             <div className="backArrow3">
