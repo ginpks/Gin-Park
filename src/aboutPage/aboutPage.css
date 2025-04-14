@@ -11,33 +11,31 @@
   position: relative;
 }
 
-#arrow {
-    display: flex;
-    font-size: 5em;
-  }
 
 #back:hover{
   cursor:pointer;
 }
 
 #back {
-    -webkit-font-smoothing: antialiased;
-    background: linear-gradient(to right,
-    #efb9ec 10%, #DCEAB2 20%, #50D8D7 90%);
-    background-position: 0;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    animation: move 20s infinite linear;
-    animation-fill-mode: forwards;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(to right,
+  #50D8D7 0%, #efb9ec 50%, #DCEAB2 100%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: move 20s infinite linear;
+  animation-fill-mode: forwards;
 }
 
 .backArrow {
-    font-size: 0.7rem;
     margin-left: 1vw;
     margin-right: 1vw;
   }
+.backArrow #back {
+  font-size: 3.5rem;
+}
 .backArrow a {
     color: inherit;
     text-decoration: none;
@@ -81,21 +79,17 @@
   .aboutMeContainer {
     display: flex;
     flex-direction: column;
-    /* Override the default width/max-width for small screens */
-    width: 90vw;     /* Make the container take up most of the viewport width */
-    max-width: none;  /* Remove the previous max-width restriction */
-    margin-top: 10vh; /* Optional: Adjust top margin for smaller screens */
-    /* Keep margin-left/right auto for centering */
+    width: 90vw;     
+    max-width: none;  
+    margin-top: 10vh; 
     margin-left: auto;
     margin-right: auto;
 
   }
   .aboutMeText {
-        width: 100%; /* This is correct - it takes full width of the now wider parent */
-    /* Optional: Adjust padding for smaller screens if vw units become too small */
+    width: 100%; 
     padding-left: 15px;
     padding-right: 15px;
-    /* Optional: Adjust font-size or line-height if needed */
     font-size: 0.9rem;
     line-height: 2rem;
   }

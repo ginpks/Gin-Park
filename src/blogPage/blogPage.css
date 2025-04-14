@@ -13,13 +13,19 @@
   width: 100%;
 }
 
+.backArrow3 #back {
+  font-size: 2.5rem;
+}
+
 .backArrow3 {
-  font-size: 1rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   max-width: 1200px;
   margin-left: auto; 
   margin-right: auto; 
-  margin-bottom: 0.5rem; 
+  margin-bottom: 2rem; 
   text-align: left;
 }
 

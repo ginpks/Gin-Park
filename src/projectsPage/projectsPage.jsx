@@ -6,27 +6,24 @@ import { motion } from 'framer-motion';
 // Define animation variants for AboutPage
 const pageVariants = {
     initial: {
-        x: "50vw",
-        scale: 0.7,
+        x: "100vw",
         opacity: 0
     },
     animate: {
         x: 0,
-        scale: 1,
         opacity: 1
     },
     exit: {
-        x: "50vw",
-        scale: 0.7,
+        x: "100vw",
         opacity: 0
     }
 };
 
-// Define transition properties (can be the same or different)
+
 const pageTransition = {
     type: "tween",
-    ease: "anticipate", // Or your preferred ease
-    duration: 0.5    // DECREASED duration (e.g., from 0.5)
+    ease: "easeInOut", 
+    duration: 0.55    
 };
 
 function ProjectPage() {
@@ -41,7 +38,7 @@ function ProjectPage() {
         >
           <div className="projects">
             <div className="backArrow2">
-              <span id="arrow"><a id="back"><Link to="/">&#8592;</Link></a></span>
+              <span id="arrow"><a id="back"><Link to="/">&#8921;</Link></a></span>
             </div>
             <div className="projectText">
                 <div className="URide">

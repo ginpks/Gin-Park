@@ -7,27 +7,24 @@ import { motion } from 'framer-motion'; // <-- Import motion
 
 const pageVariants = {
     initial: {
-        x: "50vw",
-        scale: 0.7,
+        x: "0vw",
         opacity: 0
     },
     animate: {
         x: 0,
-        scale: 1,
         opacity: 1
     },
     exit: {
-        x: "50vw",
-        scale: 0.7,
+        x: "0vw",
         opacity: 0
     }
 };
 
-// Define transition properties (can be the same or different)
+
 const pageTransition = {
     type: "tween",
-    ease: "anticipate", // Or your preferred ease
-    duration: 0.5   // DECREASED duration (e.g., from 0.5)
+    ease: "easeInOut", 
+    duration: 0.55   
 };
 
 function AboutPage() {
@@ -42,7 +39,7 @@ function AboutPage() {
         >
             <div className="aboutMeContainer">
                 <div className="backArrow">
-                    <span id="arrow"><a id="back" href="#"><Link to="/">&#8592;</Link></a></span>
+                    <span id="arrow"><a id="back" href="#"><Link to="/">&#215;</Link></a></span>
                 </div>
                 <div className="aboutMeText">
                     <h1>

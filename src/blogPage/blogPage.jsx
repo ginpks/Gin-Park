@@ -9,18 +9,15 @@ import { motion } from 'framer-motion';
 // Define animation variants for AboutPage
 const pageVariants = {
     initial: {
-        x: "50vw",
-        scale: 0.7,
+        x: "0vw",
         opacity: 0
     },
     animate: {
         x: 0,
-        scale: 1,
         opacity: 1
     },
     exit: {
-        x: "50vw",
-        scale: 0.7,
+        x: "0vw",
         opacity: 0
     }
 };
@@ -28,7 +25,7 @@ const pageVariants = {
 const pageTransition = {
     type: "tween",
     ease: "anticipate", 
-    duration: 0.6    
+    duration: 0.5    
 }
 
 
@@ -39,23 +36,22 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.2, // Optional delay before staggering starts
-            staggerChildren: 0.2,  // Time between each card animation (adjust as needed)
+            delayChildren: 0.1, // Optional delay before staggering starts
+            staggerChildren: 0.1,  // Time between each card animation (adjust as needed)
         }
     }
 };
 
 // --- Individual Card Animation ---
 const cardVariants = {
-    hidden: { y: 100, opacity: 0 }, // Start slightly down and invisible
+    hidden: {  y: 0, opacity: 0 }, // Start slightly down and invisible
     visible: {
         y: 0,
-        opacity: 1,
+        opacity:1,
         transition: {
-            // Optional: add a transition to the card itself for smoothness
             type: "tween",
-            ease: "anticipate", // Or your preferred ease
-            duration: 0.8   // DECREASED duration (e.g., from 0.5)
+            ease: "easeInOut", // Or your preferred ease
+            duration: 0.3   // DECREASED duration (e.g., from 0.5)
         }
     }
 };
@@ -80,7 +76,7 @@ function BlogPage() {
             className="blog-page"
         >
             <div className="backArrow3">
-              <span id="arrow"><a id="back"><Link to="/">&#8592;</Link></a></span>
+              <span id="arrow"><a id="back"><Link to="/">G I N P A R K</Link></a></span>
             </div>
             <motion.div
                 className="blog-posts"
