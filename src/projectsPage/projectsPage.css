@@ -2,7 +2,7 @@
 
 
 .projectText {
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px 12px rgba(255, 255, 255, 0.08);
   padding-left: 5vh;
   padding-right: 5vh;
   padding-bottom: 3vh;
@@ -20,6 +20,14 @@ p {
     padding: 0px;
 }
 
+#kittychase {
+  width: max-content;
+  width: 70px;    /* --- Adjust this width to make it smaller/larger --- */
+  height: auto;   /* Maintain aspect ratio */
+  margin-top: -5vh; /* Space above the cat (adjust as needed) */
+  margin-bottom: -5px; /* Space between cat and the hr (adjust as needed) */
+  margin-left: 55vw; 
+}
 
 #projects {
   font-weight: bold;

@@ -2,6 +2,7 @@ import React from 'react';
 import "./projectsPage.css";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
+import kittyChase from '../assets/kitty-chase-pixel.gif';
 
 // Define animation variants for AboutPage
 const pageVariants = {
@@ -40,6 +41,7 @@ function ProjectPage() {
             <div className="backArrow2">
               <span id="arrow"><a id="back"><Link to="/">&#8921;</Link></a></span>
             </div>
+            <img id="kittychase" src={kittyChase}></img>
             <div className="projectText">
                 <div className="URide">
                     <p><a href="https://github.com/ginpks/URide" target="_blank"><span id="info2">URide</span></a> - a full-stack rideshare application</p>

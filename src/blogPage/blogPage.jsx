@@ -6,6 +6,7 @@ import foodImage from '../assets/food.jpeg';
 import hikesImage from '../assets/hike.jpeg';
 import cmvImage from '../assets/cmv.png';
 import { motion } from 'framer-motion';
+import whiteCat from '../assets/white-cat.gif'
 // Define animation variants for AboutPage
 const pageVariants = {
     initial: {
@@ -78,6 +79,8 @@ function BlogPage() {
             <div className="backArrow3">
               <span id="arrow"><a id="back"><Link to="/">G I N P A R K</Link></a></span>
             </div>
+            <Link to="/"><img className="white-cat" src={whiteCat}></img></Link>
+            <hr id="roundedblog" className="back"/>
             <motion.div
                 className="blog-posts"
                 variants={containerVariants}
