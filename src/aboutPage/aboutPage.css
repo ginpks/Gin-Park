@@ -6,8 +6,8 @@
 
 .aboutMeContainer {
   margin: 15vh auto 0 auto;
-  width: 40vw;
-  max-width: 45vw;
+  width: 38vw;
+  max-width: 700px;
   position: relative;
 }
 
@@ -45,8 +45,7 @@
 .aboutMeText {
   padding-bottom: 3vh;
   color:white;
-  width: fit-content;
-  max-width: 80vw;
+  width: 100%;
   border-radius: 10px;
   font-size: 0.8rem;
   line-height: 2.5rem;
@@ -73,25 +72,27 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 550px) {
-
+@media only screen and (max-width: 700px) {
 
   .aboutMeContainer {
     display: flex;
     flex-direction: column;
     width: 90vw;     
     max-width: none;  
-    margin-top: 10vh; 
+    margin-top: 7vh; 
     margin-left: auto;
     margin-right: auto;
-
   }
   .aboutMeText {
-    width: 100%; 
+    width: 80%; 
     padding-left: 15px;
     padding-right: 15px;
     font-size: 0.9rem;
     line-height: 2rem;
+    margin: auto;
+    font-size: 10px;
   }
+
+
 
 }

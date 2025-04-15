@@ -6,6 +6,8 @@ import AboutPage from './aboutPage/aboutPage.jsx';
 import ProjectsPage from './projectsPage/projectsPage.jsx';
 import BlogPage from './blogPage/blogPage.jsx';
 import './mainPage/mainPage.css';
+import { AnimationProvider } from './animationContext.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -36,5 +38,7 @@ const router = createBrowserRouter([
 });
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <AnimationProvider>
+    <RouterProvider router={router} />
+  </AnimationProvider>
 );

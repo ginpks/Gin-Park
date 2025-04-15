@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, useLocation, useOutlet } from 'react-router-dom'; 
+import { useLocation, useOutlet } from 'react-router-dom'; 
 import './Layout.css';
 import { AnimatePresence } from 'framer-motion'
 
