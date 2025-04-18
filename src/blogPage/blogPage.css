@@ -5,14 +5,22 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.bloc-card a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 #roundedblog {
-  display: flex;
-  flex-grow:inherit;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #efb9ec;
-  max-width: 1200px;
-  min-width: 300px;
+  width: 80%;          /* Match blog-posts width */
+  max-width: 1200px;   /* Match blog-posts max-width */
+  margin-left: auto;   /* Center the hr */
+  margin-right: auto;  /* Center the hr */
+
+  /* Style the visual appearance of the HR */
+  border: none;               /* Remove default browser border */
+  border-top: 2px solid #efb9ec; /* Use a color that fits your theme */
+  height: 0;     
 }
 
 .white-cat {
@@ -77,9 +85,10 @@
 }
 
 .blog-card:hover {
-  transform: translateY(-19px);
   box-shadow: 0 8px 18px rgba(239, 185, 236, 0.1);
+  transform: translateY(-19px);
 }
+
 
 
 .blog-card img {
@@ -101,6 +110,14 @@
   color: white;
 }
 
+.blog-card a {
+  color: inherit; 
+  text-decoration: none !important; 
+  -webkit-tap-highlight-color: transparent; 
+
+}
+
+
 @media screen and (max-width: 550px) {
   .blog-page {
     padding-top: 1rem;
@@ -115,5 +132,9 @@
     width: 90%;
     font-size: 0.8rem;
     margin-bottom: 0.5rem; 
+  }
+
+  .blog-page hr {
+    width: 90%; /* Match blog-posts width on smaller screens */
   }
 }

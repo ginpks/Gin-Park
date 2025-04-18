@@ -1,0 +1,71 @@
+.header {
+    display: flex; 
+    flex-direction: column; 
+    color: white;
+    font-size: 2.5rem; 
+    text-align: center;        
+}
+.tutorial {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#setup {
+   color: #DCEAB2;
+   font-size: 3rem;
+}
+
+.tutorial a {
+    color: #efb9ec
+}
+
+.tutorial a:hover {
+    opacity: 0.6;
+}
+
+.backbutton a {
+    font-size:4rem;
+}
+
+.backbutton {
+    width: 80%;          
+    max-width: 1200px;   
+    margin-left: auto;   
+    margin-right: auto;  
+}
+
+#rest {
+    box-shadow: 0 1px 15px rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    font-size: 1.5rem;
+
+}
+
+#express {
+    height: auto;
+    width: 50rem;
+    flex-shrink: auto;
+}
+
+#express-setup {
+    padding-left: 3vw;
+
+}
+
+/* Optional: Add responsive rule if needed, mirroring blogPage.css */
+@media screen and (max-width: 550px) {
+  .header {
+     width: 90%; /* Match the width used in blogPage.css for smaller screens */
+     font-size: 2rem; /* Adjust font size for smaller screens if desired */
+     padding-top: 1rem; /* Adjust padding if needed */
+  }
+}
+
+

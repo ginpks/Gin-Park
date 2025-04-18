@@ -1,111 +1,55 @@
 import './blogPage.css';
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import restApiImage from '../assets/7076397.jpg';
-import foodImage from '../assets/food.jpeg';
-import hikesImage from '../assets/hike.jpeg';
-import cmvImage from '../assets/cmv.png';
+import { Link, Outlet } from 'react-router-dom'; // Removed useOutlet
 import { motion } from 'framer-motion';
-import whiteCat from '../assets/white-cat.gif'
-// Define animation variants for AboutPage
+import whiteCat from '../assets/white-cat.gif';
+
+// Define animation variants for BlogPage (Layout)
 const pageVariants = {
     initial: {
-        x: "0vw",
         opacity: 0
     },
     animate: {
-        x: 0,
         opacity: 1
     },
     exit: {
-        x: "0vw",
         opacity: 0
     }
 };
 
 const pageTransition = {
     type: "tween",
-    ease: "anticipate", 
-    duration: 0.5    
-}
-
-
-
-// --- Stagger Container Animation ---
-const containerVariants = {
-    hidden: { opacity: 1 }, 
-    visible: {
-        opacity: 1,
-        transition: {
-            delayChildren: 0.2, // Optional delay before staggering starts
-            staggerChildren: 0.2,  // Time between each card animation (adjust as needed)
-        }
-    }
-};
-
-// --- Individual Card Animation ---
-const cardVariants = {
-    hidden: {  y: 0, opacity: 0 }, // Start slightly down and invisible
-    visible: {
-        y: 0,
-        opacity:1,
-        transition: {
-            type: "tween",
-            ease: "easeInOut", // Or your preferred ease
-            duration: 0.3   // DECREASED duration (e.g., from 0.5)
-        }
-    }
+    ease: "easeInOut", 
+    duration: 0.5
 };
 
 function BlogPage() {
-    
     useEffect(() => {
         document.documentElement.classList.add('allow-scroll');
         return () => {
             document.documentElement.classList.remove('allow-scroll');
         };
-    }, []); 
-
+    }, []);
 
     return (
-        <motion.div 
+        <div>
+        <motion.div
             initial="initial"
             animate="animate"
             exit="exit"
             variants={pageVariants}
             transition={pageTransition}
-            className="blog-page"
+            className="blog-page" 
         >
             <div className="backArrow3">
-              <span id="arrow"><a id="back"><Link to="/">G I N P A R K</Link></a></span>
+                <span id="arrow"><a id="back"><Link to="/">G I N P A R K</Link></a></span>
             </div>
-            <Link to="/"><img className="white-cat" src={whiteCat}></img></Link>
-            <hr id="roundedblog" className="back"/>
-            <motion.div
-                className="blog-posts"
-                variants={containerVariants}
-                initial="hidden" // Start children hidden
-                animate="visible" // Animate children to visible
-            >
-                <motion.div className="blog-card" id="api" variants={cardVariants}>
-                    <img src={restApiImage}></img>
-                    <h1>Develop Your Own REST API</h1>
-                </motion.div>
-                <motion.div className="blog-card" id="CMV" variants={cardVariants}>
-                    <img src={cmvImage}></img>
-                    <h1>The Model-View-Controller Design</h1>
-                </motion.div>
-                <motion.div className="blog-card" id="food" variants={cardVariants}>
-                    <img src={foodImage}></img>
-                    <h1>Time for Food</h1>
-                </motion.div>
-                <motion.div className="blog-card" id="hikes" variants={cardVariants}>
-                    <img src={hikesImage}></img>
-                    <h1>Nature & Elevation</h1>
-                </motion.div>
-            </motion.div>
+            <Link to="/"><img className="white-cat" src={whiteCat} alt="White cat gif link to home"></img></Link>
+            <hr id="roundedblog" className="back" />
+            <Outlet />
         </motion.div>
-    )
+        </div>
+    );
 }
 
 export default BlogPage;

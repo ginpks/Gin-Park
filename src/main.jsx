@@ -5,6 +5,9 @@ import MainPage from './mainPage/mainPage.jsx';
 import AboutPage from './aboutPage/aboutPage.jsx';
 import ProjectsPage from './projectsPage/projectsPage.jsx';
 import BlogPage from './blogPage/blogPage.jsx';
+import RestAPI from './blogPage/restAPI/restAPI.jsx';
+import BlogPostsList from './blogPage/blogPostList.jsx'; // The Index component
+
 import './mainPage/mainPage.css';
 import { AnimationProvider } from './animationContext.jsx';
 
@@ -29,6 +32,16 @@ const router = createBrowserRouter([
       {
         path: "blog", 
         element: <BlogPage />,
+        children: [
+          {
+            index: true,
+            element: <BlogPostsList />,
+          },
+          {
+            path: "rest-api",
+            element: <RestAPI />
+          }
+        ],
       }
     ],
   },
