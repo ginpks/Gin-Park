@@ -1,9 +1,10 @@
 .header {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     color: white;
-    font-size: 2.5rem; 
-    text-align: center;        
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem; 
 }
 .tutorial {
     color: white;
@@ -15,6 +16,7 @@
     margin-right: 5vw;
     padding-left: 10vw;
     padding-right: 10vw;
+    margin-top: 2rem; 
 }
 
 #setup, #development, #testing  {
@@ -32,57 +34,118 @@
 
 .backbutton a {
     font-size:4rem;
+    color: white; 
+    text-decoration: none; 
 }
 
 .backbutton {
-    width: 80%;          
-    max-width: 1200px;   
-    margin-left: auto;   
-    margin-right: auto;  
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
 }
 
 #rest {
     box-shadow: 0 1px 15px rgba(255, 255, 255, 0.2);
     padding: 2rem;
     font-size: 1.5rem;
-
+    text-align: center;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    max-width: 100%;
 }
 
-#express {
-    height: auto;
-    width: 50rem;
-    flex-shrink: auto;
+
+.tutorial img {
+    display: block; 
+    max-width: 100%; 
+    height: auto;    
+    margin: 2rem auto; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
+
+
 
 #express-setup {
     padding-left: 3vw;
-
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 footer {
+    padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     margin-top: 20vh;
     border-top: 1px solid #efb9ec;
-    gap: 1vw;
+    gap: 2rem;
+    flex-wrap: wrap; 
 }
+
 
 footer #back {
-    font-size: 1.5rem;
+    color: #efb9ec;
+    text-decoration: none;
+    font-size: 1.3rem; 
 }
 
-/* Optional: Add responsive rule if needed, mirroring blogPage.css */
+
+.footer-icon {
+    color: white;
+    font-size: 2rem; 
+}
+
+
 @media only screen and (max-width: 550px) {
   .header {
-     width: 90%; /* Match the width used in blogPage.css for smaller screens */
-     font-size: 2rem; /* Adjust font size for smaller screens if desired */
-     padding-top: 1rem; /* Adjust padding if needed */
+     width: 90%;
+     font-size: 2rem;
+     padding-top: 0;
+     margin-top: 0; 
   }
 
-  .index {
-    display: hidden;
+  .tutorial {
+    padding-left: 5vw; 
+    padding-right: 5vw;
+    margin-top: 0; 
   }
+
+  #setup, #development, #testing  {
+    font-size: 2.2rem;
+  }
+
+  #rest {
+    font-size: 1.2rem; 
+    padding: 1rem; 
+  }
+
+  .backbutton {
+      width: 90%; 
+  }
+  .backbutton a {
+    font-size: 3rem; 
+  }
+
+  .tutorial img {
+      margin: 1.5rem auto; 
+  }
+
+  footer {
+      gap: 1rem; 
+      margin-top: 10vh; 
+  }
+  footer #back {
+      font-size: 1rem; 
+  }
+  .footer-icon {
+      font-size: 1.5rem; 
+  }
+
 }
+
 
 

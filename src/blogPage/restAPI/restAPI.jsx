@@ -5,6 +5,9 @@ import node from '../../assets/restapi/node.png';
 import routes from '../../assets/restapi/routes.png';
 import get from '../../assets/restapi/get.png';
 import post from '../../assets/restapi/post.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCat } from '@fortawesome/free-solid-svg-icons'; 
+
 
 
 const RestAPI = () => {
@@ -114,7 +117,7 @@ const RestAPI = () => {
         </div>
         <footer>
         <span id="arrow"><a href="#top" id="back">back to top</a></span>
-        <p>&#x2764;</p>
+        <FontAwesomeIcon icon={faCat} className="footer-icon"/>
         <span id="arrow"><a id="back"><Link to="/blog">back to blogs </Link></a></span>
         </footer>
     </div>
