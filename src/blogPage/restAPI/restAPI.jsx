@@ -5,6 +5,11 @@ import node from '../../assets/restapi/node.png';
 import routes from '../../assets/restapi/routes.png';
 import get from '../../assets/restapi/get.png';
 import post from '../../assets/restapi/post.png';
+import testget from '../../assets/restapi/testget.png';
+import testpost from '../../assets/restapi/testpost.png';
+import calltest from '../../assets/restapi/calltest.png';
+import data from '../../assets/restapi/data.png';
+import hello from '../../assets/restapi/hello.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCat } from '@fortawesome/free-solid-svg-icons'; 
 
@@ -80,7 +85,7 @@ const RestAPI = () => {
             </p>
             <br></br>
             <img id="get" src={get} alt="get code" />
-            <p>Above, we are defining a route handler for HTTP GET requets made to the root path '/' (1).<br></br>
+            <p>Above, we are defining a route handler for HTTP GET requests made to the root path '/' (1).<br></br>
                 When a client sends a GET request to 'http://localhost:3000/', this function will run.<br></br><br></br>
                 '(req, res)' are the request and response objects provided by Express. <br></br>
                 'req' contains information about the incoming request. <br></br>
@@ -111,8 +116,54 @@ const RestAPI = () => {
                 Congrats! we've succesfully immplemented our REST API. We set up an express server and <br></br>
                 defined endpoints that respond to specific HTTP methods "GET" and "POST". <br></br><br></br>
                 Now it's time to test it out. \(ˆ˚ˆ)/  
+            </p> <br></br><br></br>
+            <p>
+                We could test out these endpoints by using <a href="https://www.postman.com/" target="_blank">Postman</a> or <a href="https://curl.se/" target="_blank">cURL</a>.
+                Instead, we'll create a file<br></br> simulating our frontend from which we will make requests from.<br></br>
+                In the same directory, create a file called "client.js" or any name of your choosing.
+            </p>
+            <img id ="gettest" src={testget} alt="get test code" />
+            <p>
+                Above we are sending an HTTP GET request to the server running at 'http://localhost:3000/'. <br></br>
+                We do this by calling the 'fetch' function, passing in the specified URL (2). <br></br>
+                The 'fetch' function returns a response object, which we store in the 'response' variable. <br></br><br></br>
+                We then read the body of the response and parse it as JSON data,  <br></br>storing it in the 'data' variable (3). <br></br>
+                Keep in mind we are using 'async' and 'await' because these operations take time to complete. <br></br> <br></br>
+                Then we log the data's message attribute which should be "Hello World!" (4) <br></br>
+                Make a call to the function, and then in a separate terminal, run "node client.js". <br></br>
+                You should see the message be logged to the terminal:
+            </p>
+            <img id="hello" src={hello} alt="hello code" />
+            <br></br>
+            <p>
+                Cool, now let's test the POST endpoint:
+            </p>
+            <img src={testpost} alt="post test code" />
+            <p>Now we are sending an HTTP GET request to the server.<br></br>
+            On line (8) we are creating a JavaScript object containing the message we want to send <br></br>
+            and storing it in 'payload'. <br></br> <br></br>
+            Then we use the 'fetch' function to make a request to the server. (11) <br></br>
+            Note that we have to pass in an object specifying the method as "POST" <br></br>
+            because we want to 'send' data. <br></br> <br></br>
+            The headers attribute, mentioned earlier, tells the server that the data we <br></br>
+            are sending in the body is in JSON format (13). <br></br><br></br>
+            We then set the body of the request. This is the actual data being sent (16). <br></br>
+            'JSON.stringify' converts our JavaScript 'payload' object into a JSON string. <br></br>
+            We then log the 'responseData' that we receive back from the server which  
+            we know <br></br> should be "Data received" (18): <br></br>
+            </p>
+            <img id="data" src={data} alt="datacode" />
+            <br></br>
+            <br></br>
+            <h1 id="testing">CONCLUSION:</h1>
+            <br></br>
+            <br></br>
+            <p>Hooray! \(ˆ˚ˆ)/ We've implemented a simle REST API with Node and Express and confirmed that it works by sending requests <br></br>
+            from the frontend! There are many more tools provided by Express that we haven't gone over. <br></br>
+            Feel free to take a look at the API documentation <a href="https://expressjs.com/en/5x/api.html" target="_blank">here</a>.
             </p>
 
+            
 
         </div>
         <footer>
