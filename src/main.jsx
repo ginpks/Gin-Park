@@ -1,54 +1,50 @@
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from './Layout.jsx'; 
+import { createHashRouter, RouterProvider } from "react-router-dom";
+import Layout from './Layout.jsx';
 import MainPage from './mainPage/mainPage.jsx';
 import AboutPage from './aboutPage/aboutPage.jsx';
 import ProjectsPage from './projectsPage/projectsPage.jsx';
 import BlogPage from './blogPage/blogPage.jsx';
 import RestAPI from './blogPage/restAPI/restAPI.jsx';
-import BlogPostsList from './blogPage/blogPostList.jsx'; // The Index component
+import BlogPostsList from './blogPage/blogPostList.jsx';
 
 import './mainPage/mainPage.css';
 import { AnimationProvider } from './animationContext.jsx';
 
-
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
     children: [
       {
-        index: true,
+        index: true, // Matches #/
         element: <MainPage />,
       },
       {
-        path: "about", 
+        path: "about", // Matches #/about
         element: <AboutPage />,
       },
       {
-        path: "projects", 
+        path: "projects", // Matches #/projects
         element: <ProjectsPage />,
       },
       {
-        path: "blog", 
+        path: "blog", // Matches #/blog
         element: <BlogPage />,
         children: [
           {
-            index: true,
+            index: true, // Matches #/blog/
             element: <BlogPostsList />,
           },
           {
-            path: "rest-api",
+            path: "rest-api", // Matches #/blog/rest-api
             element: <RestAPI />
           }
         ],
       }
     ],
   },
-
-], {
-  basename: "/Gin-Park", 
-});
+]);
 
 createRoot(document.getElementById('root')).render(
   <AnimationProvider>
