@@ -17,7 +17,7 @@
     padding-right: 10vw;
 }
 
-#setup {
+#setup, #development, #testing  {
    color: #DCEAB2;
    font-size: 3rem;
 }
@@ -59,12 +59,29 @@
 
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    border-top: 1px solid #efb9ec;
+    gap: 1vw;
+}
+
+footer #back {
+    font-size: 1.5rem;
+}
+
 /* Optional: Add responsive rule if needed, mirroring blogPage.css */
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   .header {
      width: 90%; /* Match the width used in blogPage.css for smaller screens */
      font-size: 2rem; /* Adjust font size for smaller screens if desired */
      padding-top: 1rem; /* Adjust padding if needed */
+  }
+
+  .index {
+    display: hidden;
   }
 }
 

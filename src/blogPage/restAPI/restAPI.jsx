@@ -9,7 +9,7 @@ import post from '../../assets/restapi/post.png';
 
 const RestAPI = () => {
     return (
-    <div>
+    <div id="top">
         <div className="backbutton">
             <span id="arrow"><a id="back"><Link to="/blog">&#10550;</Link></a></span>
         </div>
@@ -45,7 +45,7 @@ const RestAPI = () => {
 
             <br></br>
             <br></br>
-            <h1 id="setup">DEVELOPMENT:</h1>
+            <h1 id="development">DEVELOPMENT:</h1>
             <br></br>
             <br></br>
 
@@ -101,7 +101,7 @@ const RestAPI = () => {
             </p>
             <br></br>
             <br></br>
-            <h1 id="setup">TESTING OUR REST API:</h1>
+            <h1 id="testing">TESTING OUR REST API:</h1>
             <br></br>
             <br></br>
             <p>
@@ -110,8 +110,13 @@ const RestAPI = () => {
                 Now it's time to test it out. \(ˆ˚ˆ)/  
             </p>
 
-            
+
         </div>
+        <footer>
+        <span id="arrow"><a href="#top" id="back">back to top</a></span>
+        <p>&#x2764;</p>
+        <span id="arrow"><a id="back"><Link to="/blog">back to blogs </Link></a></span>
+        </footer>
     </div>
     )
 }
