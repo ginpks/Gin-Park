@@ -2,12 +2,10 @@ import "./restAPI.css";
 import { Link } from 'react-router-dom';
 import express from '../../assets/restapi/express.png';
 import node from '../../assets/restapi/node.png';
-import routes from '../../assets/restapi/routes.png';
 import get from '../../assets/restapi/get.png';
 import post from '../../assets/restapi/post.png';
 import testget from '../../assets/restapi/testget.png';
 import testpost from '../../assets/restapi/testpost.png';
-import calltest from '../../assets/restapi/calltest.png';
 import data from '../../assets/restapi/data.png';
 import hello from '../../assets/restapi/hello.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +13,20 @@ import { faCat } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 const RestAPI = () => {
+
+    // Function to scroll to the top smoothly
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Optional: for smooth scrolling
+        });
+        // Alternatively, if you want to scroll specifically to the #top div:
+        // const topElement = document.getElementById('top');
+        // topElement?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
     <div id="top">
         <div className="backbutton">
@@ -26,9 +37,9 @@ const RestAPI = () => {
         </div>
         <div className="tutorial">
             <p>This guide will take you through the steps of designing your very own REST API.
-            <br></br>
+    
             For this tutorial, we will be using the Node.js and Express.js libraries.
-            <br></br>
+ 
             Please ensure that you have <a href="https://nodejs.org/en/download/" target="_blank">Node.js installed</a> on your machine.
 
             <br></br>
@@ -38,16 +49,16 @@ const RestAPI = () => {
             <br></br>
             <br></br>
 
-            <p>Start by creating a directory of your choosing.<br></br>
-                Inside that directory, you need to initialize a new node project by running the <br></br> following command in your terminal:
+            <p>Start by creating a directory of your choosing.
+                Inside that directory, you need to initialize a new node project by running the following command in your terminal:
             </p>
             <h1 id="rest">npm init -y</h1>
-            <p>This command initializes a package.json file in your root directory,<br></br> providing all the necessary 
+            <p>This command initializes a package.json file in your root directory, providing all the necessary 
                 dependencies and metadata for your node project.
             </p>
             <p>Next, in your terminal, run:</p>
             <h1 id="rest">npm install express</h1>
-            <p>The Express library will be used to build our REST API, helping to define our routes <br></br>
+            <p>The Express library will be used to build our REST API, helping to define our routes
                 and handle HTTP requests/returns.
             </p>
 
@@ -59,8 +70,8 @@ const RestAPI = () => {
 
             <p>We'll start by creating a file in our directory called server.js, <br></br>but feel free to name it whatever you want</p>
             <img id="express" src={express} alt="express code" />
-            <p id="express-setup">We first import the express library into our script (1). We then intialize the express server, <br></br>
-                assigning it to a variable called 'app' (3). Think of app as the main 'object' that represents <br></br>our express server.
+            <p id="express-setup">We first import the express library into our script (1). We then intialize the express server,<br></br>
+                assigning it to a variable called 'app' (3). Think of app as the main 'object' that represents our express server.
                 <br></br><br></br>We then define our port number '3000' from which our express server will live on (5). <br></br><br></br>
                 Next, we'll instruct our express server to use the middleware 'express.json' (7).<br></br> 
                 This allows any incoming 
@@ -72,7 +83,7 @@ const RestAPI = () => {
                 <br></br>
                 Finally, we will start the server passing in the port and a callback function,<br></br>
                 confirming that the server started (9).
-                If you enter "node server.js" in the terminal, <br></br>
+                If you enter "node server.js" in the terminal,<br></br>
                 the express server should successfully launch and log to the terminal:
             </p>
             <img id="node-img" src={node} alt="node code" />
@@ -167,7 +178,14 @@ const RestAPI = () => {
 
         </div>
         <footer>
-        <span id="arrow"><a href="#top" id="back">back to top</a></span>
+        <span id="arrow">                
+                <a
+                    id="back"
+                    onClick={handleScrollToTop}
+                    style={{ cursor: 'pointer' }} // Make it look clickable
+                >
+                    back to top
+                </a></span>
         <FontAwesomeIcon icon={faCat} className="footer-icon"/>
         <span id="arrow"><a id="back"><Link to="/blog">back to blogs </Link></a></span>
         </footer>

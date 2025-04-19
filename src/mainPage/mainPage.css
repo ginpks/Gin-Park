@@ -7,11 +7,11 @@ html {
 }
 
 .main-page {
-    margin: 10vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* width */
@@ -28,15 +28,18 @@ html {
 }
 
 .information img {
-  position: relative;
-  width: 90px; /* Example: Reduced from 50px to 35px */
-  height: auto; /* Keep 'auto' to maintain aspect ratio */
-  top: 0.8vh; /* You might need to adjust 'top' after resizing */
+  position: relative;  
+  bottom: -8px;       
+  left: 60%;          
+  transform: translateX(-50%);
+  width: 90px;
+  height: auto;
   z-index: 10;
-  left: 230px;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+  margin-top:10vh;
+
 }
 
 

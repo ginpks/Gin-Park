@@ -42,7 +42,7 @@ p {
   }
 
 .backArrow2 {
-  margin-top: 10vh;
+  margin-top: 11vh;
 }
 
 
@@ -99,8 +99,8 @@ Link {
   flex-direction: column;
   gap: 5px; 
   padding: 5px; 
-  margin-left: 16.5vw;
-  margin-right: 15vw;
+  margin-left: 18vw;
+  margin-right: 17vw;
 }
 
 #arrow {
@@ -118,7 +118,7 @@ Link {
   }
 
   .backArrow2 {
-    margin-top: 1vh;
+    margin-top: 9vh;
   }
 
 

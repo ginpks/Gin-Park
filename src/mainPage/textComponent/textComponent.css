@@ -1,3 +1,4 @@
+
 .text {
   border: 1px solid #efb9ec;
   box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
@@ -5,6 +6,7 @@
   padding-left: 3vh;
   padding-right: 3vh;
   border-radius: 7%;
+
 }
 
 .text a {

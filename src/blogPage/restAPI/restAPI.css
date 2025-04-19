@@ -9,12 +9,12 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* This still centers images and the paragraph blocks */
     justify-content: start;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-left: 10vw;
-    padding-right: 10vw; 
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 5vw; /* Keep or reduce slightly if desired */
+    padding-right: 5vw;
 }
 
 #setup, #development, #testing  {
@@ -95,6 +95,21 @@ footer #back {
 .footer-icon {
     color: white;
     font-size: 2rem; 
+}
+
+.tutorial p {
+    max-width: 70ch; /* Optimal line length is often 60-75 characters (ch unit) */
+    /* Or use pixels or percentage: */
+    /* max-width: 800px; */
+    /* max-width: 85%; */
+
+    margin-left: auto;  /* Centers the paragraph block horizontally */
+    margin-right: auto;
+    margin-bottom: 1em; /* Optional: Add space between paragraphs */
+    text-align: left;   /* Keep text left-aligned for readability (usually default) */
+    /* Ensure word wrapping still works if needed, though max-width usually handles this */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 

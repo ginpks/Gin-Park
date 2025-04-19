@@ -8,7 +8,7 @@ function Layout() {
   const currentOutlet = useOutlet();
   
   return (
-    <> 
+    <div className="layout">
       <div className="bg-animation">
         <div id="stars"></div>
         <div id="stars2"></div>
@@ -21,7 +21,7 @@ function Layout() {
           {currentOutlet && React.cloneElement(currentOutlet, { key: location.pathname })}
         </AnimatePresence>
       </main>
-    </>
+    </div>
   );
 }
 

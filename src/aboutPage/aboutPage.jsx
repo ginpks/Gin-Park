@@ -2,8 +2,11 @@ import React from 'react';
 import './aboutPage.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import from brands
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'; 
 import { motion } from 'framer-motion'; // <-- Import motion
+import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons'; 
+import { faBurger } from '@fortawesome/free-solid-svg-icons'; 
+import { faCheese } from '@fortawesome/free-solid-svg-icons';
 
 const pageVariants = {
     initial: {
@@ -44,12 +47,16 @@ function AboutPage() {
                 <div className="aboutMeText">
                     <h1>
                         Greetings! My name is Gin, and I'm a student at UMass Amherst currently pursuing a B.S. in Computer Science. <br /><br />
-                        Developing and refining ideas through code is something that gets me out of bed in the morning. Whether it’s front-end, back-end, or full-stack work, I’m deeply dedicated to my craft while committed to learning and growing alongside others.<br /><br />
-                        If you're curious about my leisurely activites: I enjoy hiking, gaming, shows/movies, MMA, Brazilian JiuJitsu, and especially food/cooking!<br></br> Check out my food on{' '}
+                        Building and refining ideas through code is something that gets me out of bed in the morning. Whether it’s front-end, back-end, or full-stack work, I'm always chasing new ways to refine my craft, and I love connecting with others who share the same sentiment. \(ˆ˚ˆ)/  <br /><br />
+                        Curious about my other activities? I enjoy hiking, gaming, shows/movies, MMA, Brazilian JiuJitsu, and especially food/cooking!
+                        <br></br> Check out my food on{' '}
                         <a href="https://www.instagram.com/ginsgluttony/" target="_blank" rel="noopener noreferrer" id="ig">
                             instagram!{' '}
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
+                        {' '} <FontAwesomeIcon icon={faPizzaSlice} />
+                        {' '} <FontAwesomeIcon icon={faBurger} />
+                        {' '} <FontAwesomeIcon icon={faCheese} />
                     </h1>
                 </div>
             </div>
