@@ -29,7 +29,7 @@ function MainPage() {
                     return { y: "-100vh", opacity: 0 };
                 case 'middle': // Fade in
                     return {
-                        scale: 0.9,  
+                        scale: 1,  
                         opacity: 0
                     }
             }          
@@ -48,7 +48,7 @@ function MainPage() {
                      return { y: "-100vh", opacity: 0 };
                  case 'middle': // Fade out in place
                     return {
-                        scale: 0.9, 
+                        scale: 1, 
                         opacity: 0
                     };
             }

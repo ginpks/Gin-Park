@@ -169,8 +169,8 @@ const RestAPI = () => {
             <h1 id="testing">CONCLUSION:</h1>
             <br></br>
             <br></br>
-            <p>Hooray! \(ˆ˚ˆ)/ We've implemented a simle REST API with Node and Express and confirmed that it works by sending requests <br></br>
-            from the frontend! There are many more tools provided by Express that we haven't gone over. <br></br>
+            <p>Hooray! \(ˆ˚ˆ)/ We've implemented a simle REST API with Node and Express and confirmed that it works by sending requests 
+            from the frontend! <br></br> There are many more tools provided by Express that we haven't gone over. <br></br>
             Feel free to take a look at the API documentation <a href="https://expressjs.com/en/5x/api.html" target="_blank">here</a>.
             </p>
 

@@ -43,6 +43,18 @@ function ProjectPage() {
             </div>
             <img id="kittychase" src={kittyChase}></img>
             <div className="projectText">
+                <div className="NotifAI">
+                    <p><a href="https://github.com/ginpks/NotifAI" target="_blank"><span id="info2">NotifAI</span></a> - Notifications as a Service (NaaS)</p>
+                    <ul>
+                        <li>Collaborated with a team of 7 to develop a full-stack notification service with modular, scalable architecture</li>
+                        <li>Designed and implemented backend using the MVC pattern to ensure maintainability and separation of concerns</li>
+                        <li>Built RESTful API routes and endpoints using Express.js for seamless client-server communication</li>
+                        <li>Modeled complex data relationships with PostgreSQL and Sequelize ORM for efficient data handling</li>
+                        <li>Developed session-based user authentication and persistence using Express.js middleware</li>
+                        <li>Integrated Gemini API on the frontend to provide AI-powered chatbot assistance and dynamic UX</li>
+                        <li>Implemented and configured Jest for unit testing, ensuring seamless integration between frontend and backend components</li>
+                    </ul>
+                </div>
                 <div className="URide">
                     <p><a href="https://github.com/ginpks/URide" target="_blank"><span id="info2">URide</span></a> - a full-stack rideshare application</p>
                     <ul>

@@ -57,6 +57,11 @@ ul {
   padding-top: 15px;
   background-color: #141c35;
   }
+
+ul li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
   
   
 hr {

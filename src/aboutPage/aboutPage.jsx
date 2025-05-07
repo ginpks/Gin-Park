@@ -46,9 +46,9 @@ function AboutPage() {
                 </div>
                 <div className="aboutMeText">
                     <h1>
-                        Greetings! My name is Gin, and I'm a student at UMass Amherst currently pursuing a B.S. in Computer Science. <br /><br />
-                        Building and refining ideas through code is something that gets me out of bed in the morning. Whether it’s front-end, back-end, or full-stack work, I'm always chasing new ways to refine my craft, and I love connecting with others who share the same sentiment. \(ˆ˚ˆ)/  <br /><br />
-                        Curious about my other activities? I enjoy hiking, gaming, shows/movies, MMA, Brazilian JiuJitsu, and especially food/cooking!
+                        Hi. My name's Gin. <br></br>I'm a student at UMass Amherst currently pursuing a B.S. in Computer Science. <br /><br />
+                       Programming is a creative outlet for me, and I love learning new tools that help me express myself. Whether it’s front-end, back-end, or full-stack work, I'm always chasing new opportunities, and I love connecting with others who share the same sentiment. \(ˆ˚ˆ)/  <br /><br />
+                       Beyond coding, I enjoy hiking, gaming, watching shows and movies, and practicing MMA/BJJ. I’m also big on food—both cooking and eating.
                         <br></br> Check out my food on{' '}
                         <a href="https://www.instagram.com/ginsgluttony/" target="_blank" rel="noopener noreferrer" id="ig">
                             instagram!{' '}
